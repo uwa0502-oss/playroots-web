@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>年齢別ギフト特集 | プレイルーツ ONLINE SHOP</title>
+<meta name="description" content="0ヶ月から6歳以上まで。月齢・年齢と予算から、いまの発達段階にちょうどいい贈りものを選べます。">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="プレイルーツ">
+<meta property="og:title" content="年齢別ギフト特集｜プレイルーツ ONLINE SHOP">
+<meta property="og:description" content="0ヶ月から6歳以上まで。月齢・年齢と予算から、いまの発達段階にちょうどいい贈りものを選べます。">
+<meta property="og:url" content="https://example.netlify.app/kodomo-shop/gift.html">
+<meta property="og:image" content="https://example.netlify.app/kodomo-shop/assets/ogp.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#7D9471">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>"><text y=%22.9em%22 font-size=%2290%22><i class="ph-duotone ph-plant" aria-hidden="true"></i></text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBF9F5; --card:#FFFFFF;
+    --sage:#7D9471; --sage-deep:#5C7253; --sage-pale:#EDF1E9;
+    --butter:#F3CE8B; --blush:#E9C3B8;
+    --ink:#3B382F; --sub:#8B8477; --line:#EAE4D7;
+    --r:20px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",system-ui,sans-serif;font-size:15px;line-height:1.8;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,h4,.disp{font-family:"Zen Maru Gothic","Noto Sans JP",sans-serif;line-height:1.45}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+  .util{background:var(--sage-pale);font-size:12px}
+  .util-in{display:flex;justify-content:flex-end;gap:20px;height:34px;align-items:center;color:var(--sage-deep)}
+  .util-in .corp{margin-right:auto;font-weight:700}
+  .util a:hover{text-decoration:underline}
+  header.site{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:40;backdrop-filter:blur(8px)}
+  .head-in{display:flex;align-items:center;gap:22px;height:70px}
+  .logo{font-family:"Zen Maru Gothic",sans-serif;font-weight:700;font-size:16px;color:var(--sage-deep);white-space:nowrap}
+  .logo small{display:block;font-size:9px;letter-spacing:2px;color:var(--sub);font-weight:400}
+  .search{flex:1;display:flex;align-items:center;gap:8px;background:var(--card);border:1.5px solid var(--line);
+    border-radius:999px;padding:9px 16px;color:var(--sub);font-size:13px}
+  .search input{border:none;outline:none;background:transparent;flex:1;font-family:inherit;font-size:13px;color:var(--ink)}
+  .head-nav{display:flex;gap:18px;font-size:13px;white-space:nowrap}
+  .head-nav a:hover{color:var(--sage-deep)}
+  .banner{background:var(--sage);color:#fff;text-align:center;font-size:12.5px;padding:9px 12px;font-weight:500}
+  @media(max-width:860px){.search,.head-nav{display:none}}
+
+  .crumb{font-size:11.5px;color:var(--sub);padding:14px 0}
+  .crumb a:hover{color:var(--sage-deep)}
+
+  .hero{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center;padding:12px 0 56px}
+  .eyebrow{display:inline-block;background:var(--butter);color:#5B4A22;font-size:11.5px;font-weight:700;
+    letter-spacing:1px;padding:5px 13px;border-radius:999px;margin-bottom:16px}
+  h1{font-size:clamp(24px,4vw,36px);font-weight:700}
+  .hero p{color:var(--sub);margin-top:16px;font-size:14px}
+  .slot{position:relative;overflow:hidden;border-radius:var(--r);background:var(--sage-pale);border:1px solid var(--line)}
+  .slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:5px;color:var(--sage-deep);font-size:12.5px;text-align:center;
+    background:radial-gradient(90% 90% at 25% 20%, rgba(243,206,139,.4), transparent 60%),
+      radial-gradient(80% 80% at 85% 85%, rgba(233,195,184,.4), transparent 55%),var(--sage-pale)}
+  .ph code{font-size:10.5px;color:var(--sub);background:rgba(255,255,255,.75);padding:2px 8px;border-radius:6px}
+  .hero .slot{aspect-ratio:4/3}
+  @media(max-width:820px){.hero{grid-template-columns:1fr;padding:4px 0 40px}}
+
+  .filter{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:32px 28px;margin-bottom:40px}
+  .fgroup+.fgroup{margin-top:26px;padding-top:24px;border-top:1px dashed var(--line)}
+  .flabel{font-family:"Zen Maru Gothic",sans-serif;font-weight:700;font-size:15px;margin-bottom:4px}
+  .fnote{font-size:12px;color:var(--sub);margin-bottom:14px}
+  .chips{display:flex;flex-wrap:wrap;gap:9px}
+  .chip{font-family:"Noto Sans JP",sans-serif;font-size:13px;padding:9px 17px;border-radius:999px;
+    background:var(--paper);border:1.5px solid var(--line);color:var(--ink);cursor:pointer;transition:all .18s ease}
+  .chip:hover{border-color:var(--sage);background:var(--sage-pale)}
+  .chip[aria-pressed="true"]{background:var(--sage);border-color:var(--sage);color:#fff;font-weight:700}
+  .chip.baby{background:#FFF8EC;border-color:#F0DFBF}
+  .chip.baby[aria-pressed="true"]{background:var(--sage);border-color:var(--sage)}
+
+  .bar{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:18px;flex-wrap:wrap;gap:8px}
+  .bar h2{font-size:20px}
+  .count{font-size:13px;color:var(--sub)}
+  .source{font-size:11px;color:var(--sub);margin-bottom:16px}
+  .source b{color:var(--sage-deep)}
+  .goods{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .item{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+    display:flex;flex-direction:column;transition:transform .2s ease,box-shadow .2s ease}
+  .item:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(92,114,83,.10)}
+  .item .slot{aspect-ratio:1/1;border:none;border-radius:0}
+  .rank{position:absolute;top:10px;left:10px;z-index:2;width:30px;height:30px;border-radius:50%;
+    background:var(--butter);color:#5B4A22;font-family:"Zen Maru Gothic",sans-serif;font-weight:700;font-size:13px;
+    display:flex;align-items:center;justify-content:center}
+  .item .info{padding:14px 15px 17px;display:flex;flex-direction:column;gap:7px;flex:1}
+  .item h3{font-size:14px;font-weight:500;line-height:1.55}
+  .meta{display:flex;align-items:center;justify-content:space-between;margin-top:auto;gap:8px}
+  .price{font-family:"Zen Maru Gothic",sans-serif;font-weight:700;font-size:16px;color:var(--sage-deep)}
+  .price small{font-size:10.5px;color:var(--sub);font-weight:400}
+  .agetag{font-size:10.5px;background:var(--sage-pale);color:var(--sage-deep);padding:3px 9px;border-radius:999px;white-space:nowrap}
+  .empty{grid-column:1/-1;text-align:center;padding:52px 20px;color:var(--sub);font-size:14px;
+    background:var(--card);border:1px dashed var(--line);border-radius:var(--r)}
+  @media(max-width:900px){.goods{grid-template-columns:repeat(2,1fr)}}
+
+  section{padding:46px 0}
+  .shead{text-align:center;margin-bottom:32px}
+  .shead h2{font-size:clamp(20px,3vw,26px)}
+  .shead p{color:var(--sub);font-size:13.5px;margin-top:8px}
+
+  .svcs{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .svc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px 20px;text-align:center}
+  .svc .ic{width:46px;height:46px;border-radius:15px;background:var(--blush);display:flex;align-items:center;
+    justify-content:center;font-size:20px;margin:0 auto 13px}
+  .svc h4{font-size:14.5px;margin-bottom:7px}
+  .svc p{font-size:12.5px;color:var(--sub);line-height:1.75}
+  @media(max-width:900px){.svcs{grid-template-columns:1fr 1fr}}
+
+  .tags{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+  .tag{font-size:12.5px;padding:8px 16px;border-radius:999px;background:var(--card);
+    border:1.5px solid var(--sage-pale);color:var(--sage-deep);transition:all .18s ease}
+  .tag:hover{background:var(--sage-pale);border-color:var(--sage)}
+
+  footer{background:var(--sage-pale);margin-top:56px;padding:44px 0 26px;font-size:12.5px;color:var(--sub)}
+  .fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:26px;margin-bottom:30px}
+  .fgrid h5{font-family:"Zen Maru Gothic",sans-serif;font-size:13px;color:var(--ink);margin-bottom:11px}
+  .fgrid ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+  .fgrid a:hover{color:var(--sage-deep);text-decoration:underline}
+  .copy{border-top:1px solid rgba(139,132,119,.25);padding-top:18px;text-align:center;font-size:11.5px}
+  @media(max-width:820px){.fgrid{grid-template-columns:1fr 1fr}}
+
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.item:hover{transform:none}}
+  :focus-visible{outline:2.5px solid var(--sage);outline-offset:3px;border-radius:6px}
+</style>
+
+<!-- ===== アクセス解析（Google Analytics 4）=====
+     公開後、下の G-XXXXXXXXXX を実際の測定IDに置き換え、
+     この <script> 2つのコメントを外すと計測が始まります。
+     測定IDは https://analytics.google.com/ で無料取得できます。
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+===== ここまで ===== -->
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css">
+
+<style>
+  /* Phosphor icon defaults */
+  i[class^="ph"],i[class*=" ph"]{display:inline-block;line-height:1;vertical-align:middle}
+  .ic i{font-size:24px;color:var(--sage-deep)}
+  .svc .ic i,.entry .ic i,.point .ic i,.cap .ic i{font-size:23px;color:var(--sage-deep)}
+  .pillar .ic i{font-size:26px;color:var(--sage-deep)}
+  .obox h4 i,.carebox h4 i,.play h4 i,.optlabel i{font-size:19px;color:var(--sage);vertical-align:-3px}
+  .mk .badge i{font-size:24px}
+  .toc h2 i{font-size:19px;color:var(--sage);vertical-align:-3px}
+  .safenote i{font-size:16px;color:var(--sage);vertical-align:-2px}
+  h4 i,h2 i,h1 i{color:var(--sage)}
+</style>
+</head>
+<body>
+
+<div class="util"><div class="wrap util-in">
+  <a class="corp" href="../kodomo-site/index.html">← プレイルーツ 企業サイト</a>
+  <a href="#">ご利用ガイド</a><a href="#">ログイン・新規登録</a><a href="#">お気に入り</a><a href="#">カート</a>
+</div></div>
+
+<header class="site"><div class="wrap head-in">
+  <a class="logo" href="index.html" style="display:flex;align-items:center;gap:8px"><svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px;height:24px;flex:none"><g stroke="#5C7253" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><path d="M100 120 Q78 104 74 84 Q96 84 100 108" fill="#A9C29B"/><path d="M100 120 Q122 100 128 82 Q104 82 100 108" fill="#7D9471"/><path d="M100 150 Q99 132 100 116"/><path d="M100 150 Q90 162 82 170 M100 150 Q110 162 118 170 M100 150 Q100 164 100 174" stroke-width="8"/></g></svg><span>プレイルーツ<small>ONLINE SHOP</small></span></a>
+  <label class="search"><i class="ph ph-magnifying-glass" aria-hidden="true"></i><input type="text" placeholder="商品名・キーワードで探す" aria-label="商品検索"></label>
+  <nav class="head-nav">
+    <a href="guide.html">選び方ガイド</a><a href="index.html">ショップTOP</a><a href="#age">年齢で探す</a><a href="#goods">ランキング</a><a href="#gift">ギフト</a>
+  </nav>
+</div></header>
+
+<div class="banner">新規登録で500ポイント｜お誕生日月は10%優待｜3,000円以上で送料無料</div>
+
+<div class="wrap crumb"><a href="index.html">ショップTOP</a> ＞ 年齢別ギフト特集</div>
+
+<div class="wrap hero">
+  <div class="reveal in">
+    <span class="eyebrow">年齢別ギフト特集</span>
+    <h1>その子の「いま」に、<br>ちょうどいい贈りもの。</h1>
+    <p>子どもの成長や発達のペースは、一人ひとり違います。月齢・年齢と予算から、いまの発達段階に合う道具を選べます。</p>
+  </div>
+  <div class="slot reveal in"><div class="ph">メインビジュアル<code>assets/hero.jpg</code></div></div>
+</div>
+
+<div class="wrap" id="age">
+  <div class="filter reveal in">
+    <div class="fgroup">
+      <div class="flabel">年齢・月齢から選ぶ</div>
+      <div class="fnote">0歳は発達の変化が大きいため、月齢で分けています。</div>
+      <div class="chips" id="ageChips">
+        <button class="chip" data-age="all" aria-pressed="true">すべて</button>
+        <button class="chip baby" data-age="m0" aria-pressed="false">0ヶ月〜</button>
+        <button class="chip baby" data-age="m3" aria-pressed="false">3ヶ月〜</button>
+        <button class="chip baby" data-age="m6" aria-pressed="false">6ヶ月〜</button>
+        <button class="chip baby" data-age="m10" aria-pressed="false">10ヶ月〜</button>
+        <button class="chip" data-age="y1" aria-pressed="false">1歳〜</button>
+        <button class="chip" data-age="y1h" aria-pressed="false">1歳半〜</button>
+        <button class="chip" data-age="y2" aria-pressed="false">2歳〜</button>
+        <button class="chip" data-age="y3" aria-pressed="false">3歳〜</button>
+        <button class="chip" data-age="y4" aria-pressed="false">4歳〜</button>
+        <button class="chip" data-age="y5" aria-pressed="false">5歳〜</button>
+        <button class="chip" data-age="y6" aria-pressed="false">6歳〜</button>
+      </div>
+    </div>
+    <div class="fgroup">
+      <div class="flabel">予算から選ぶ</div>
+      <div class="fnote">表示価格はすべて税込です。</div>
+      <div class="chips" id="priceChips">
+        <button class="chip" data-price="all" aria-pressed="true">すべて</button>
+        <button class="chip" data-price="p1" aria-pressed="false">〜1,000円</button>
+        <button class="chip" data-price="p2" aria-pressed="false">1,000〜2,000円</button>
+        <button class="chip" data-price="p3" aria-pressed="false">2,000〜3,000円</button>
+        <button class="chip" data-price="p4" aria-pressed="false">3,000〜5,000円</button>
+        <button class="chip" data-price="p5" aria-pressed="false">5,000〜10,000円</button>
+        <button class="chip" data-price="p6" aria-pressed="false">10,000円〜</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap" id="goods">
+  <div class="bar">
+    <h2>人気ランキング</h2>
+    <span class="count" id="count">読み込み中…</span>
+  </div>
+  <div class="source" id="source"></div>
+  <div class="goods" id="goodsGrid">
+    <p class="empty" id="empty" hidden>条件に合う商品が見つかりませんでした。<br>年齢や予算を「すべて」に戻すと、全商品を表示できます。</p>
+  </div>
+</div>
+
+<section id="gift">
+  <div class="wrap">
+    <div class="shead reveal"><h2>ギフトサービス</h2><p>贈りものとして、安心して選んでいただくために。</p></div>
+    <div class="svcs">
+      <div class="svc reveal"><div class="ic"><i class="ph-duotone ph-gift" aria-hidden="true"></i></div><h4>ラッピング</h4><p>オリジナルの包装紙とリボンで無料ラッピング。有料の特別包装もご用意しています。</p></div>
+      <div class="svc reveal"><div class="ic"><i class="ph-duotone ph-tag" aria-hidden="true"></i></div><h4>のし・カード</h4><p>出産祝い・お誕生日など、用途に合わせたのしとメッセージカードを選べます。</p></div>
+      <div class="svc reveal"><div class="ic"><i class="ph-duotone ph-credit-card" aria-hidden="true"></i></div><h4>ギフトカード</h4><p>相手に選んでもらえるカード型のギフト券。金額は自由に指定できます。</p></div>
+      <div class="svc reveal"><div class="ic"><i class="ph-duotone ph-truck" aria-hidden="true"></i></div><h4>直送・日時指定</h4><p>贈り先へ直接お届けします。納品書に金額は記載されません。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="tags">
+  <div class="wrap">
+    <div class="shead reveal"><h2>おすすめのキーワード</h2></div>
+    <div class="tags reveal">
+      <a class="tag" href="#">#出産祝い</a><a class="tag" href="#">#お誕生日</a>
+      <a class="tag" href="#">#人気ランキング</a><a class="tag" href="#">#ギフトカード</a>
+      <a class="tag" href="#">#木のおもちゃ</a><a class="tag" href="#">#知育あそび</a>
+      <a class="tag" href="#">#雨の日あそび</a><a class="tag" href="#">#きょうだいおそろい</a>
+      <a class="tag" href="#">#入園入学</a><a class="tag" href="#">#アウトレット</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><h5>ご利用ガイド</h5><ul>
+        <li><a href="#">はじめての方へ</a></li><li><a href="#">配送・送料について</a></li>
+        <li><a href="#">返品・交換</a></li><li><a href="#">ポイント・会員ステージ</a></li>
+        <li><a href="#">よくあるご質問</a></li></ul></div>
+      <div><h5>ギフトについて</h5><ul>
+        <li><a href="#">ラッピング</a></li><li><a href="#">のし・メッセージカード</a></li>
+        <li><a href="#">ギフトカード</a></li><li><a href="#">出産祝いガイド</a></li></ul></div>
+      <div><h5>会社について</h5><ul>
+        <li><a href="../kodomo-site/index.html">企業サイト</a></li>
+        <li><a href="../kodomo-site/safety.html">安全へのこだわり</a></li>
+        <li><a href="../kodomo-site/asobi.html">あそび環境づくり</a></li></ul></div>
+      <div><h5>ご案内</h5><ul>
+        <li><a href="#">ご利用規約</a></li><li><a href="../kodomo-site/privacy.html">プライバシーポリシー</a></li>
+        <li><a href="../kodomo-site/tokushoho.html">特定商取引法に基づく表示</a></li><li><a href="#">運営会社</a></li></ul></div>
+      <div><h5>フォローする</h5><ul>
+        <li><a href="#">Instagram</a></li><li><a href="#">LINE</a></li>
+        <li><a href="#">YouTube</a></li><li><a href="#">メールマガジン登録</a></li></ul></div>
+    </div>
+    <div class="copy">© 2026 プレイルーツ（架空のサイトです）</div>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   ★ microCMS 接続設定 ★
+   ここ2行を、あなたのmicroCMSの値に書き換えるだけで、
+   商品がmicroCMSの管理画面から読み込まれるようになります。
+   （書き換える前は、下のサンプル商品が表示されます）
+   ------------------------------------------------------------
+   serviceDomain … microCMSの「サービスID」。
+                   管理画面URL https://XXXX.microcms.io の XXXX 部分。
+   apiKey        … 「APIキー」。microCMSの [権限管理 > APIキー] で取得。
+   endpoint      … 作成したAPIのエンドポイント名（例: products）。
+   ============================================================ */
+var MICROCMS = {
+  serviceDomain: "ここにサービスID",   // 例: kodomo-toys
+  apiKey:        "ここにAPIキー",
+  endpoint:      "products"
+};
+
+/* --- microCMS未設定のときに表示されるサンプル商品 --- */
+var SAMPLE = [
+  {name:"にぎにぎラトル",        price:1800, age:"0ヶ月〜",  rank:1},
+  {name:"やわらか布のえほん",    price:2400, age:"3ヶ月〜",  rank:2},
+  {name:"ふりふりマラカス",      price:1500, age:"6ヶ月〜",  rank:3},
+  {name:"木のおきあがりこぼし",  price:3200, age:"10ヶ月〜", rank:4},
+  {name:"はじめてのつみき",      price:4800, age:"1歳〜",    rank:5},
+  {name:"型はめボックス",        price:3600, age:"1歳半〜",  rank:6},
+  {name:"スロープあそび",        price:6500, age:"2歳〜",    rank:7},
+  {name:"木のおままごとセット",  price:8900, age:"3歳〜",    rank:8},
+  {name:"マグネットブロック",    price:7200, age:"4歳〜",    rank:9},
+  {name:"ひらがなカード",        price:1200, age:"4歳〜",    rank:10},
+  {name:"木のドールハウス",      price:14000,age:"5歳〜",    rank:11},
+  {name:"工作クラフトBOX",       price:2900, age:"6歳〜",    rank:12}
+];
+
+/* --- 表示ラベル → 絞り込みキー の対応表 --- */
+var AGE_KEY = {"0ヶ月〜":"m0","3ヶ月〜":"m3","6ヶ月〜":"m6","10ヶ月〜":"m10",
+  "1歳〜":"y1","1歳半〜":"y1h","2歳〜":"y2","3歳〜":"y3","4歳〜":"y4","5歳〜":"y5","6歳〜":"y6"};
+function priceKey(p){ if(p<1000)return"p1"; if(p<2000)return"p2"; if(p<3000)return"p3";
+  if(p<5000)return"p4"; if(p<10000)return"p5"; return"p6"; }
+function esc(s){ return String(s).replace(/[&<>"]/g,function(c){
+  return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function yen(n){ return "¥"+Number(n).toLocaleString("ja-JP"); }
+
+/* --- microCMSのセレクト欄は配列で返ることがあるため吸収 --- */
+function one(v){ return Array.isArray(v) ? v[0] : v; }
+
+var state={age:"all",price:"all"};
+var grid=document.getElementById("goodsGrid");
+var emptyEl=document.getElementById("empty");
+var countEl=document.getElementById("count");
+var sourceEl=document.getElementById("source");
+
+function cardHTML(it,i){
+  var age=it.age||"";
+  var img=it.image
+    ? '<img src="'+esc(it.image)+'" alt="'+esc(it.name)+'">'
+    : '<div class="ph"><code>item-'+(i+1)+'.jpg</code></div>';
+  return '<a class="item" href="product.html?name='+encodeURIComponent(it.name)+'" data-age="'+(AGE_KEY[age]||"")+'" data-price="'+priceKey(it.price)+'">'
+    + '<div class="slot"><div class="rank">'+(it.rank||i+1)+'</div>'+img+'</div>'
+    + '<div class="info"><h3>'+esc(it.name)+'</h3><div class="meta">'
+    + '<span class="price">'+yen(it.price)+'<small>（税込）</small></span>'
+    + '<span class="agetag">'+esc(age)+'</span></div></div></a>';
+}
+
+function render(list){
+  // 既存カードを消して、末尾のemptyメッセージは残す
+  grid.querySelectorAll(".item").forEach(function(n){ n.remove(); });
+  var html=list.map(cardHTML).join("");
+  emptyEl.insertAdjacentHTML("beforebegin", html);
+  applyFilter();
+}
+
+function applyFilter(){
+  var items=Array.prototype.slice.call(grid.querySelectorAll(".item"));
+  var shown=0;
+  items.forEach(function(el){
+    var okA=(state.age==="all")||(el.dataset.age===state.age);
+    var okP=(state.price==="all")||(el.dataset.price===state.price);
+    var show=okA&&okP; el.hidden=!show; if(show)shown++;
+  });
+  countEl.textContent=shown+"件を表示中";
+  emptyEl.hidden=shown!==0;
+}
+
+function bind(id,key){
+  var box=document.getElementById(id);
+  box.addEventListener("click",function(e){
+    var b=e.target.closest(".chip"); if(!b)return;
+    box.querySelectorAll(".chip").forEach(function(c){c.setAttribute("aria-pressed","false");});
+    b.setAttribute("aria-pressed","true"); state[key]=b.dataset[key]; applyFilter();
+  });
+}
+bind("ageChips","age"); bind("priceChips","price");
+
+/* --- 商品の読み込み：microCMSが設定済みなら取得、未設定ならサンプル --- */
+function loadProducts(){
+  var configured = MICROCMS.serviceDomain.indexOf("ここに")===-1
+                && MICROCMS.apiKey.indexOf("ここに")===-1;
+  if(!configured){
+    sourceEl.innerHTML='現在は<b>サンプル表示</b>です（microCMS未接続）。スクリプト内の設定を入力すると、管理画面の商品に切り替わります。';
+    render(SAMPLE);
+    return;
+  }
+  var url="https://"+MICROCMS.serviceDomain+".microcms.io/api/v1/"+MICROCMS.endpoint+"?limit=100";
+  fetch(url,{headers:{"X-MICROCMS-API-KEY":MICROCMS.apiKey}})
+    .then(function(r){ if(!r.ok)throw new Error("HTTP "+r.status); return r.json(); })
+    .then(function(data){
+      var list=(data.contents||[]).map(function(c){
+        return {
+          name: c.name,
+          price: Number(c.price),
+          age: one(c.age),                     // セレクト欄
+          rank: c.rank ? Number(c.rank) : null,
+          image: c.image && c.image.url ? c.image.url : ""
+        };
+      });
+      if(!list.length){ sourceEl.innerHTML='microCMSに商品がまだありません。管理画面から商品を追加してください。'; render([]); return; }
+      sourceEl.innerHTML='<b>microCMSと接続中</b>：管理画面の商品を表示しています。';
+      render(list);
+    })
+    .catch(function(err){
+      sourceEl.innerHTML='microCMSへの接続に失敗しました（'+esc(err.message)+'）。設定を確認してください。いまはサンプルを表示します。';
+      render(SAMPLE);
+    });
+}
+loadProducts();
+
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} });
+},{threshold:.12});
+document.querySelectorAll(".reveal:not(.in)").forEach(function(el){ io.observe(el); });
+</script>
+</body>
+</html>
