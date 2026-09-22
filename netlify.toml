@@ -1,0 +1,16 @@
+# Plaroots サイト設定
+[build]
+  publish = "."
+
+# セキュリティ・キャッシュの基本ヘッダー
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+
+# 動画は長めにキャッシュ
+[[headers]]
+  for = "/*.mp4"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
