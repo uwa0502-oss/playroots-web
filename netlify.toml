@@ -2,15 +2,23 @@
 [build]
   publish = "."
 
-# セキュリティ・キャッシュの基本ヘッダー
+# 社内用メモ（_internal フォルダ）は公開しない
+[[redirects]]
+  from = "/_internal/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+# セキュリティの基本ヘッダー
 [[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
 
-# 動画は長めにキャッシュ
+# 画像は長めにキャッシュ
 [[headers]]
-  for = "/*.mp4"
+  for = "/*.jpg"
   [headers.values]
     Cache-Control = "public, max-age=604800"

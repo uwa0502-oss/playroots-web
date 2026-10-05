@@ -2,5 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /kodomo-site/thanks.html
 
-# 公開後、実際のURL（将来はhttps://plaroots.jp/sitemap.xml）に差し替えてください
-Sitemap: https://example.netlify.app/sitemap.xml
+# 独自ドメイン移行時は、URLを差し替えてください
+Sitemap: https://vermillion-stroopwafel-f0c8aa.netlify.app/sitemap.xml
