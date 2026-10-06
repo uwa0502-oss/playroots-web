@@ -22,3 +22,9 @@
   for = "/*.jpg"
   [headers.values]
     Cache-Control = "public, max-age=604800"
+
+# 動画も長めにキャッシュ
+[[headers]]
+  for = "/*.mp4"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
