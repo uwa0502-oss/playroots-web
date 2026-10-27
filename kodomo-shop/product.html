@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>商品詳細｜プラルーツ ONLINE SHOP</title>
+<title>商品詳細（準備中）｜Plaroots ONLINE SHOP</title>
 <meta name="description" content="プラルーツの木のあそび道具。対象年齢・サイズ・素材・お手入れ方法をご確認いただけます。ラッピング・名入れ承ります。">
 <meta property="og:type" content="product">
 <meta property="og:site_name" content="Plaroots">
@@ -11,12 +11,14 @@
 <meta property="og:description" content="月齢・年齢に合わせて選べる木のあそび道具。ラッピング・名入れ承ります。">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:image" content="https://vermillion-stroopwafel-f0c8aa.netlify.app/kodomo-shop/assets/ogp.jpg">
+<meta name="robots" content="noindex">
 <meta name="theme-color" content="#7D9471">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><circle cx=%22100%22 cy=%22100%22 r=%2288%22 stroke=%22%23A9773F%22 stroke-width=%2214%22 fill=%22none%22/><circle cx=%22100%22 cy=%22100%22 r=%2258%22 stroke=%22%23C79A5E%22 stroke-width=%2214%22 fill=%22none%22/><circle cx=%22100%22 cy=%22100%22 r=%2228%22 stroke=%22%237D9471%22 stroke-width=%2214%22 fill=%22none%22/><circle cx=%22100%22 cy=%22100%22 r=%228%22 fill=%22%235C7253%22/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
+  html{overflow-x:clip}
   :root{
     --paper:#FBF9F5; --card:#FFFFFF;
     --sage:#7D9471; --sage-deep:#5C7253; --sage-pale:#EDF1E9;
@@ -197,6 +199,14 @@
   @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}
     html{scroll-behavior:auto}.item:hover,.btn:hover{transform:none}}
   :focus-visible{outline:2.5px solid var(--sage);outline-offset:3px;border-radius:6px}
+
+  .prep-notice{background:var(--sage-pale);border-radius:32px;padding:52px 28px;text-align:center;margin:10px 0 40px}
+  .prep-ill{width:88px;height:88px;margin:0 auto 18px}
+  .prep-ill svg{width:100%;height:100%;display:block}
+  .prep-notice h2,.prep-notice h3{font-family:"Zen Maru Gothic",sans-serif;font-size:clamp(20px,3vw,26px);color:var(--sage-deep);margin-bottom:14px}
+  .prep-notice p{color:var(--sub);font-size:14px;line-height:2;margin-bottom:24px}
+  .prep-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .head-nav{margin-left:auto}
 </style>
 
 <!-- ===== アクセス解析（Google Analytics 4）=====
@@ -231,167 +241,36 @@
 
 <div class="util"><div class="wrap util-in">
   <a class="corp" href="../kodomo-site/index.html">← プラルーツ 企業サイト</a>
-  <a href="#">ご利用ガイド</a><a href="#">ログイン・新規登録</a><a href="#">お気に入り</a><a href="#">カート</a>
+  <a href="../kodomo-site/company.html">運営会社</a><a href="https://www.instagram.com/plaroots.uwa/" target="_blank" rel="noopener">Instagram</a>
 </div></div>
 
 <header class="site"><div class="wrap head-in">
   <a class="logo" href="index.html" style="display:flex;align-items:center;gap:8px"><svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px;height:24px;flex:none"><circle cx="100" cy="100" r="88" stroke="#A9773F" stroke-width="9" fill="none"/><circle cx="100" cy="100" r="64" stroke="#B98A4E" stroke-width="9" fill="none"/><circle cx="100" cy="100" r="40" stroke="#C79A5E" stroke-width="9" fill="none"/><circle cx="100" cy="100" r="18" stroke="#7D9471" stroke-width="9" fill="none"/><circle cx="100" cy="100" r="7" fill="#5C7253"/></svg><span>plaroots<small>ONLINE SHOP</small></span></a>
-  <label class="search"><i class="ph ph-magnifying-glass" aria-hidden="true"></i><input type="text" placeholder="商品名・キーワードで探す" aria-label="商品検索"></label>
   <nav class="head-nav">
-    <a href="guide.html">選び方ガイド</a><a href="index.html">ショップTOP</a><a href="gift.html">年齢で探す</a>
-    <a href="index.html#ranking">ランキング</a><a href="gift.html#gift">ギフト</a>
+    <a href="index.html">ショップTOP</a><a href="guide.html">選び方ガイド</a><a href="gift.html">ギフト特集</a><a href="../kodomo-site/contact.html">ご相談</a>
   </nav>
 </div></header>
 
-<div class="wrap crumb">
-  <a href="index.html">ショップTOP</a> ＞ <a href="gift.html">商品一覧</a> ＞ <span id="crumbName">商品詳細</span>
-</div>
+<div class="wrap crumb"><a href="index.html">ショップTOP</a> ＞ 商品詳細</div>
 
 <div class="wrap">
-  <div class="detail">
-    <!-- 画像 -->
-    <div class="gallery">
-      <div class="main" id="mainImg"><div class="ph">商品写真<code>assets/item-1.jpg</code></div></div>
-      <div class="thumbs">
-        <div class="thumb on"><div class="ph">1</div></div>
-        <div class="thumb"><div class="ph">2</div></div>
-        <div class="thumb"><div class="ph">3</div></div>
-        <div class="thumb"><div class="ph">4</div></div>
-      </div>
-    </div>
-
-    <!-- 情報 -->
-    <div class="info">
-      <div class="tags">
-        <span class="tg" id="ageTag">対象年齢</span>
-        <span class="tg new">ラッピング承ります</span>
-        <span class="tg">名入れ対応</span>
-      </div>
-      <h1 id="pName">読み込み中…</h1>
-
-      <div class="priceline">
-        <span class="price" id="pPrice">—</span>
-        <span class="price"><small>（税込）</small></span>
-      </div>
-      <div class="ship">5,980円以上のご購入で送料無料／通常2〜4日でお届け</div>
-
-      <p class="lead" id="pLead">商品の説明を読み込んでいます。</p>
-
-      <!-- ラッピング -->
-      <div class="opt">
-        <div class="optlabel">ラッピング <span class="free">承ります</span></div>
-        <div class="choices">
-          <label class="choice"><input type="radio" name="wrap" value="0" checked><span>包装なし</span></label>
-          <label class="choice"><input type="radio" name="wrap" value="0"><span>ギフトラッピング</span></label>
-          <label class="choice"><input type="radio" name="wrap" value="0"><span>のし（出産祝い）</span></label>
-          <label class="choice"><input type="radio" name="wrap" value="0"><span>のし（お誕生日）</span></label>
-        </div>
-      </div>
-
-      <!-- 名入れ -->
-      <div class="opt">
-        <div class="optlabel">名入れ（レーザー刻印）</div>
-        <div class="choices">
-          <label class="choice"><input type="radio" name="engrave" value="0" checked onchange="toggleEngrave(false)"><span>なし</span></label>
-          <label class="choice"><input type="radio" name="engrave" value="550" onchange="toggleEngrave(true)"><span>あり（＋¥550）</span></label>
-        </div>
-        <div class="engrave" id="engraveBox" hidden>
-          <input type="text" id="engraveText" maxlength="10" placeholder="例：ゆうと" aria-label="名入れするお名前">
-          <div class="hint">ひらがな・カタカナ・アルファベット10文字まで。名入れ商品は制作に約1週間いただきます（返品不可）。</div>
-        </div>
-      </div>
-
-      <!-- 数量 -->
-      <div class="qty">
-        <div class="optlabel" style="margin:0">数量</div>
-        <div class="qtybox">
-          <button type="button" onclick="changeQty(-1)" aria-label="数量を減らす">−</button>
-          <span id="qtyVal">1</span>
-          <button type="button" onclick="changeQty(1)" aria-label="数量を増やす">＋</button>
-        </div>
-      </div>
-
-      <div class="total">
-        <span class="lbl">合計（税込）</span>
-        <span class="val" id="totalVal">—</span>
-      </div>
-
-      <div class="actions">
-        <button class="btn btn-fill" onclick="addCart()">カートに入れる</button>
-        <a class="btn btn-line" href="#">♡ お気に入り</a>
-      </div>
-
-      <div class="safenote">
-        <i class="ph-duotone ph-plant" aria-hidden="true"></i> この商品の素材・塗料・安全基準については
-        <a href="../kodomo-site/safety.html">安全へのこだわり</a>をご覧ください。
-        角はすべて面取りし、舐めても安全な塗料のみを使用しています。
-      </div>
-    </div>
+  <div class="prep-notice">
+    <div class="prep-ill"><svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"><g stroke="#5C7253" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M100 120 Q78 104 74 84 Q96 84 100 108" fill="#A9C29B" fill-opacity="0.9"/><path d="M100 120 Q122 100 128 82 Q104 82 100 108" fill="#7D9471" fill-opacity="0.85"/><path d="M100 150 Q99 132 100 116"/><path d="M100 150 Q92 162 84 170 M100 150 Q108 164 116 170 M100 150 Q100 164 100 174" stroke-width="2.6"/><path d="M64 150 Q100 146 138 150" stroke-width="2.8"/></g></svg></div>
+    <h1>商品ページは、ただいま準備中です</h1>
+    <p>販売開始にあわせて、商品ごとの詳しいご紹介（素材・サイズ・対象年齢・遊び方）を掲載します。<br>もうしばらくお待ちください。</p>
+    <div class="prep-btns"><a class="btn btn-fill" href="guide.html">選び方ガイドを読む</a><a class="btn btn-line" href="../kodomo-site/contact.html">入荷のお知らせを希望する</a></div>
   </div>
 </div>
-
-<section>
-  <div class="wrap">
-    <div class="shead reveal"><h2>商品仕様</h2></div>
-    <div class="spec reveal">
-      <table>
-        <tbody>
-          <tr><th>商品名</th><td id="specName">—</td></tr>
-          <tr><th>対象年齢</th><td id="specAge">—</td></tr>
-          <tr><th>サイズ</th><td>約 W120 × D120 × H60 mm（仮）</td></tr>
-          <tr><th>重さ</th><td>約 320g（仮）</td></tr>
-          <tr><th>素材</th><td>ブナ材（国産広葉樹）／水性塗料</td></tr>
-          <tr><th>生産国</th><td>日本</td></tr>
-          <tr><th>安全基準</th><td>商品ごとに記載します ※取得している認証のみ表示してください</td></tr>
-          <tr><th>お手入れ</th><td>固く絞った布で拭いてください。水洗い・食洗機はご使用いただけません。</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="shead reveal">
-      <h2>成長に合わせた、あそび方</h2>
-      <p>同じ道具でも、発達段階によって遊び方が変わります。</p>
-    </div>
-    <div class="plays">
-      <div class="play reveal">
-        <span class="age">0〜1歳</span>
-        <h4>にぎる・ふる</h4>
-        <p>手のひら全体でにぎり、音や重みを感じる時期。振ったときの音が、次の動きを引き出します。</p>
-      </div>
-      <div class="play reveal">
-        <span class="age">1〜2歳</span>
-        <h4>積む・並べる</h4>
-        <p>指先で位置を調整できるようになります。倒れる／倒れないの試行錯誤が集中力を育てます。</p>
-      </div>
-      <div class="play reveal">
-        <span class="age">3歳〜</span>
-        <h4>見立てる</h4>
-        <p>積木が家や電車に変わります。ごっこ遊びの道具として、想像力を広げていきます。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="shead reveal"><h2>この商品を見た方は、こちらも見ています</h2></div>
-    <div class="goods" id="related"></div>
-  </div>
-</section>
 
 <footer>
   <div class="wrap">
     <div class="fgrid">
       <div><h5>ご利用ガイド</h5><ul>
-        <li><a href="#">はじめての方へ</a></li><li><a href="#">配送・送料について</a></li>
-        <li><a href="#">返品・交換</a></li><li><a href="#">よくあるご質問</a></li></ul></div>
+        <li><a href="../kodomo-site/tokushoho.html">配送・送料について</a></li>
+        <li><a href="../kodomo-site/tokushoho.html">返品・交換</a></li><li><a href="guide.html#faq">よくあるご質問</a></li></ul></div>
       <div><h5>ギフトについて</h5><ul>
-        <li><a href="guide.html">木のおもちゃの選び方</a></li><li><a href="gift.html">年齢別ギフト特集</a></li><li><a href="#">ラッピング</a></li>
-        <li><a href="#">名入れサービス</a></li><li><a href="#">出産祝いガイド</a></li></ul></div>
+        <li><a href="guide.html">木のおもちゃの選び方</a></li><li><a href="gift.html">年齢別ギフト特集</a></li><li><a href="gift.html#gift">ラッピング</a></li>
+        </ul></div>
       <div><h5>会社について</h5><ul>
         <li><a href="../kodomo-site/index.html">企業サイト</a></li>
         <li><a href="../kodomo-site/safety.html">安全へのこだわり</a></li>
@@ -399,122 +278,14 @@
         <li><a href="https://www.instagram.com/plaroots.uwa/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px;margin-right:5px"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a></li>
         <li><a href="../kodomo-site/contact.html">お問い合わせ</a></li></ul></div>
       <div><h5>ご案内</h5><ul>
-        <li><a href="#">ご利用規約</a></li><li><a href="../kodomo-site/privacy.html">プライバシーポリシー</a></li>
+        <li><a href="../kodomo-site/privacy.html">プライバシーポリシー</a></li>
         <li><a href="../kodomo-site/tokushoho.html">特定商取引法に基づく表示</a></li></ul></div>
     </div>
     <div class="copy">© 2026 plaroots ONLINE SHOP</div>
   </div>
 </footer>
 
-<script>
-/* ===== microCMS設定（gift.html と同じ値） ===== */
-var MICROCMS = { serviceDomain:"ここにサービスID", apiKey:"ここにAPIキー", endpoint:"products" };
 
-var SAMPLE = [
-  {name:"にぎにぎラトル",       price:1800, age:"0ヶ月〜",  desc:"手のひらにおさまる大きさと、やさしい音。はじめて自分の意思でつかむ道具として設計しました。"},
-  {name:"やわらか布のえほん",   price:2400, age:"3ヶ月〜",  desc:"洗える布製。ページごとに手ざわりが変わり、めくる動作を自然に引き出します。"},
-  {name:"ふりふりマラカス",     price:1500, age:"6ヶ月〜",  desc:"振る強さで音が変わります。原因と結果のつながりに気づきはじめる時期に。"},
-  {name:"木のおきあがりこぼし", price:3200, age:"10ヶ月〜", desc:"倒しても起き上がる動きが、繰り返し試したくなる気持ちを育てます。"},
-  {name:"はじめてのつみき",     price:4800, age:"1歳〜",    desc:"小さな手でもつかめる45mm角。積む・並べる・見立てると、長く遊び方が広がります。"},
-  {name:"型はめボックス",       price:3600, age:"1歳半〜",  desc:"6種類の形。入らない経験を繰り返しながら、形の違いに気づいていきます。"},
-  {name:"スロープあそび",       price:6500, age:"2歳〜",    desc:"転がる様子を目で追う楽しさ。手を離した後も動きが続く面白さがあります。"},
-  {name:"木のおままごとセット", price:8900, age:"3歳〜",    desc:"切る手ごたえにこだわりました。ごっこ遊びを通じて、言葉のやりとりが増えます。"}
-];
-
-function esc(s){ return String(s).replace(/[&<>"]/g,function(c){
-  return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
-function yen(n){ return "¥"+Number(n).toLocaleString("ja-JP"); }
-function one(v){ return Array.isArray(v)?v[0]:v; }
-function param(k){ return new URLSearchParams(location.search).get(k); }
-
-var product=null, qty=1;
-
-function render(p, all){
-  product=p;
-  document.getElementById("pName").textContent=p.name;
-  document.getElementById("crumbName").textContent=p.name;
-  document.getElementById("specName").textContent=p.name;
-  document.getElementById("ageTag").textContent="対象 "+(p.age||"—");
-  document.getElementById("specAge").textContent=p.age||"—";
-  document.getElementById("pPrice").textContent=yen(p.price);
-  document.getElementById("pLead").textContent=p.desc||"";
-  document.title=p.name+"｜プラルーツ ONLINE SHOP";
-  if(p.image){
-    document.getElementById("mainImg").innerHTML='<img src="'+esc(p.image)+'" alt="'+esc(p.name)+'">';
-  }
-  updateTotal();
-  renderRelated(all, p.name);
-}
-
-function renderRelated(all, exclude){
-  var list=all.filter(function(x){return x.name!==exclude;}).slice(0,4);
-  document.getElementById("related").innerHTML=list.map(function(x,i){
-    var img=x.image?'<img src="'+esc(x.image)+'" alt="'+esc(x.name)+'">'
-                    :'<div class="ph"><code>item-'+(i+1)+'.jpg</code></div>';
-    return '<a class="item" href="product.html?name='+encodeURIComponent(x.name)+'">'
-      +'<div class="imgbox">'+img+'</div><div class="info2"><h3>'+esc(x.name)+'</h3>'
-      +'<span class="p">'+yen(x.price)+'</span></div></a>';
-  }).join("");
-}
-
-function changeQty(d){
-  qty=Math.max(1,Math.min(20,qty+d));
-  document.getElementById("qtyVal").textContent=qty;
-  updateTotal();
-}
-function toggleEngrave(on){
-  document.getElementById("engraveBox").hidden=!on;
-  updateTotal();
-}
-function updateTotal(){
-  if(!product)return;
-  var eng=document.querySelector('input[name=engrave]:checked');
-  var add=eng?Number(eng.value):0;
-  document.getElementById("totalVal").textContent=yen((product.price+add)*qty);
-}
-function addCart(){
-  var eng=document.querySelector('input[name=engrave]:checked');
-  var name=document.getElementById("engraveText").value;
-  var msg=product.name+" を "+qty+"点、カートに追加しました。";
-  if(eng&&Number(eng.value)>0){ msg+= name?("\n名入れ：「"+name+"」"):"\n※名入れのお名前が未入力です。"; }
-  alert(msg+"\n\n※これはデモです。実際の購入機能は未実装です。");
-}
-
-function load(){
-  var configured = MICROCMS.serviceDomain.indexOf("ここに")===-1 && MICROCMS.apiKey.indexOf("ここに")===-1;
-  var want=param("name");
-  if(!configured){
-    var p = want ? (SAMPLE.filter(function(x){return x.name===want;})[0]||SAMPLE[0]) : SAMPLE[0];
-    render(p, SAMPLE);
-    return;
-  }
-  var url="https://"+MICROCMS.serviceDomain+".microcms.io/api/v1/"+MICROCMS.endpoint+"?limit=100";
-  fetch(url,{headers:{"X-MICROCMS-API-KEY":MICROCMS.apiKey}})
-    .then(function(r){ if(!r.ok)throw new Error("HTTP "+r.status); return r.json(); })
-    .then(function(d){
-      var all=(d.contents||[]).map(function(c){
-        return {name:c.name, price:Number(c.price), age:one(c.age), desc:c.desc||"",
-                image:(c.image&&c.image.url)?c.image.url:""};
-      });
-      if(!all.length){ render(SAMPLE[0], SAMPLE); return; }
-      var p = want ? (all.filter(function(x){return x.name===want;})[0]||all[0]) : all[0];
-      render(p, all);
-    })
-    .catch(function(){ render(SAMPLE[0], SAMPLE); });
-}
-load();
-
-document.querySelectorAll(".thumb").forEach(function(t){
-  t.addEventListener("click",function(){
-    document.querySelectorAll(".thumb").forEach(function(x){x.classList.remove("on");});
-    t.classList.add("on");
-  });
-});
-
-var io=new IntersectionObserver(function(es){
-  es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} });
-},{threshold:.12});
-document.querySelectorAll(".reveal:not(.in)").forEach(function(el){ io.observe(el); });
-</script>
+<script src="../common/menu.js" defer></script>
 </body>
 </html>

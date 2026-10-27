@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>年齢別ギフト特集 | プラルーツ ONLINE SHOP</title>
+<title>年齢別ギフト特集｜Plaroots ONLINE SHOP</title>
 <meta name="description" content="0ヶ月から6歳以上まで。月齢・年齢と予算から、いまの発達段階にちょうどいい贈りものを選べます。">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Plaroots">
@@ -19,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
+  html{overflow-x:clip}
   :root{
     --paper:#FBF9F5; --card:#FFFFFF;
     --sage:#7D9471; --sage-deep:#5C7253; --sage-pale:#EDF1E9;
@@ -134,6 +135,17 @@
   .reveal.in{opacity:1;transform:none}
   @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.item:hover{transform:none}}
   :focus-visible{outline:2.5px solid var(--sage);outline-offset:3px;border-radius:6px}
+
+  .prep-notice{background:var(--sage-pale);border-radius:32px;padding:52px 28px;text-align:center;margin:10px 0 40px}
+  .prep-ill{width:88px;height:88px;margin:0 auto 18px}
+  .prep-ill svg{width:100%;height:100%;display:block}
+  .prep-notice h2,.prep-notice h3{font-family:"Zen Maru Gothic",sans-serif;font-size:clamp(20px,3vw,26px);color:var(--sage-deep);margin-bottom:14px}
+  .prep-notice p{color:var(--sub);font-size:14px;line-height:2;margin-bottom:24px}
+  .prep-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .head-nav{margin-left:auto}
+  .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;font-family:"Zen Maru Gothic",sans-serif;font-weight:700;font-size:14px;padding:13px 26px;transition:transform .18s ease,background .2s ease;text-decoration:none}
+  .btn-fill{background:var(--sage);color:#fff}.btn-fill:hover{background:var(--sage-deep);transform:translateY(-2px)}
+  .btn-line{background:var(--card);color:var(--sage-deep);border:1.5px solid var(--sage)}.btn-line:hover{background:var(--sage-pale)}
 </style>
 
 <!-- ===== アクセス解析（Google Analytics 4）=====
@@ -168,14 +180,13 @@
 
 <div class="util"><div class="wrap util-in">
   <a class="corp" href="../kodomo-site/index.html">← プラルーツ 企業サイト</a>
-  <a href="#">ご利用ガイド</a><a href="#">ログイン・新規登録</a><a href="#">お気に入り</a><a href="#">カート</a>
+  <a href="../kodomo-site/company.html">運営会社</a><a href="https://www.instagram.com/plaroots.uwa/" target="_blank" rel="noopener">Instagram</a>
 </div></div>
 
 <header class="site"><div class="wrap head-in">
   <a class="logo" href="index.html" style="display:flex;align-items:center;gap:8px"><svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px;height:24px;flex:none"><circle cx="100" cy="100" r="88" stroke="#A9773F" stroke-width="9" fill="none"/><circle cx="100" cy="100" r="64" stroke="#B98A4E" stroke-width="9" fill="none"/><circle cx="100" cy="100" r="40" stroke="#C79A5E" stroke-width="9" fill="none"/><circle cx="100" cy="100" r="18" stroke="#7D9471" stroke-width="9" fill="none"/><circle cx="100" cy="100" r="7" fill="#5C7253"/></svg><span>plaroots<small>ONLINE SHOP</small></span></a>
-  <label class="search"><i class="ph ph-magnifying-glass" aria-hidden="true"></i><input type="text" placeholder="商品名・キーワードで探す" aria-label="商品検索"></label>
   <nav class="head-nav">
-    <a href="guide.html">選び方ガイド</a><a href="index.html">ショップTOP</a><a href="#age">年齢で探す</a><a href="#goods">ランキング</a><a href="#gift">ギフト</a>
+    <a href="index.html">ショップTOP</a><a href="guide.html">選び方ガイド</a><a href="gift.html">ギフト特集</a><a href="../kodomo-site/contact.html">ご相談</a>
   </nav>
 </div></header>
 
@@ -189,53 +200,27 @@
     <h1>その子の「いま」に、<br>ちょうどいい贈りもの。</h1>
     <p>子どもの成長や発達のペースは、一人ひとり違います。月齢・年齢と予算から、いまの発達段階に合う道具を選べます。</p>
   </div>
-  <div class="slot reveal in"><div class="ph">メインビジュアル<code>assets/hero.jpg</code></div></div>
+  <div class="slot reveal in">
+    <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%">
+      <rect width="400" height="500" fill="#EDF1E9"/>
+      <circle cx="300" cy="130" r="130" fill="#F3CE8B" fill-opacity="0.3"/>
+      <circle cx="90" cy="390" r="110" fill="#E9C3B8" fill-opacity="0.3"/>
+      <g stroke="#5C7253" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" transform="translate(120,150) scale(1.7)">
+        <path d="M70 80 Q70 60 96 60 Q122 60 122 80 Q122 100 96 100 Q70 100 70 80 Z" fill="#F3CE8B" fill-opacity="0.9"/>
+        <ellipse cx="96" cy="80" rx="10" ry="9" fill="#FBF9F5"/>
+        <path d="M64 150 Q60 122 74 118 Q96 114 118 118 Q134 122 132 150 Q100 160 64 150 Z" fill="#E9C3B8" fill-opacity="0.6"/>
+        <path d="M74 120 Q74 106 80 104 M88 117 Q88 100 94 100 M102 117 Q104 100 110 102 M116 120 Q120 108 124 112"/>
+      </g>
+    </svg>
+  </div>
 </div>
 
 <div class="wrap" id="age">
-  <div class="filter reveal in">
-    <div class="fgroup">
-      <div class="flabel">年齢・月齢から選ぶ</div>
-      <div class="fnote">0歳は発達の変化が大きいため、月齢で分けています。</div>
-      <div class="chips" id="ageChips">
-        <button class="chip" data-age="all" aria-pressed="true">すべて</button>
-        <button class="chip baby" data-age="m0" aria-pressed="false">0ヶ月〜</button>
-        <button class="chip baby" data-age="m3" aria-pressed="false">3ヶ月〜</button>
-        <button class="chip baby" data-age="m6" aria-pressed="false">6ヶ月〜</button>
-        <button class="chip baby" data-age="m10" aria-pressed="false">10ヶ月〜</button>
-        <button class="chip" data-age="y1" aria-pressed="false">1歳〜</button>
-        <button class="chip" data-age="y1h" aria-pressed="false">1歳半〜</button>
-        <button class="chip" data-age="y2" aria-pressed="false">2歳〜</button>
-        <button class="chip" data-age="y3" aria-pressed="false">3歳〜</button>
-        <button class="chip" data-age="y4" aria-pressed="false">4歳〜</button>
-        <button class="chip" data-age="y5" aria-pressed="false">5歳〜</button>
-        <button class="chip" data-age="y6" aria-pressed="false">6歳〜</button>
-      </div>
-    </div>
-    <div class="fgroup">
-      <div class="flabel">予算から選ぶ</div>
-      <div class="fnote">表示価格はすべて税込です。</div>
-      <div class="chips" id="priceChips">
-        <button class="chip" data-price="all" aria-pressed="true">すべて</button>
-        <button class="chip" data-price="p1" aria-pressed="false">〜1,000円</button>
-        <button class="chip" data-price="p2" aria-pressed="false">1,000〜2,000円</button>
-        <button class="chip" data-price="p3" aria-pressed="false">2,000〜3,000円</button>
-        <button class="chip" data-price="p4" aria-pressed="false">3,000〜5,000円</button>
-        <button class="chip" data-price="p5" aria-pressed="false">5,000〜10,000円</button>
-        <button class="chip" data-price="p6" aria-pressed="false">10,000円〜</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="wrap" id="goods">
-  <div class="bar">
-    <h2>人気ランキング</h2>
-    <span class="count" id="count">読み込み中…</span>
-  </div>
-  <div class="source" id="source"></div>
-  <div class="goods" id="goodsGrid">
-    <p class="empty" id="empty" hidden>条件に合う商品が見つかりませんでした。<br>年齢や予算を「すべて」に戻すと、全商品を表示できます。</p>
+  <div class="prep-notice">
+    <div class="prep-ill"><svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"><g stroke="#5C7253" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M100 120 Q78 104 74 84 Q96 84 100 108" fill="#A9C29B" fill-opacity="0.9"/><path d="M100 120 Q122 100 128 82 Q104 82 100 108" fill="#7D9471" fill-opacity="0.85"/><path d="M100 150 Q99 132 100 116"/><path d="M100 150 Q92 162 84 170 M100 150 Q108 164 116 170 M100 150 Q100 164 100 174" stroke-width="2.6"/><path d="M64 150 Q100 146 138 150" stroke-width="2.8"/></g></svg></div>
+    <h2>ギフトにおすすめの商品は、ただいま準備中です</h2>
+    <p>世界中から選び抜いた木のおもちゃを、月齢・年齢と予算から選べるよう準備しています。<br>それまでは、年齢ごとの選び方をまとめたガイドをご覧ください。</p>
+    <div class="prep-btns"><a class="btn btn-fill" href="guide.html">選び方ガイドを読む</a><a class="btn btn-line" href="../kodomo-site/contact.html">入荷のお知らせを希望する</a></div>
   </div>
 </div>
 
@@ -251,176 +236,34 @@
   </div>
 </section>
 
-<section id="tags">
-  <div class="wrap">
-    <div class="shead reveal"><h2>おすすめのキーワード</h2></div>
-    <div class="tags reveal">
-      <a class="tag" href="#">#出産祝い</a><a class="tag" href="#">#お誕生日</a>
-      <a class="tag" href="#">#人気ランキング</a><a class="tag" href="#">#ギフトカード</a>
-      <a class="tag" href="#">#木のおもちゃ</a><a class="tag" href="#">#知育あそび</a>
-      <a class="tag" href="#">#雨の日あそび</a><a class="tag" href="#">#きょうだいおそろい</a>
-      <a class="tag" href="#">#入園入学</a><a class="tag" href="#">#アウトレット</a>
-    </div>
-  </div>
-</section>
-
 <footer>
   <div class="wrap">
     <div class="fgrid">
       <div><h5>ご利用ガイド</h5><ul>
-        <li><a href="#">はじめての方へ</a></li><li><a href="#">配送・送料について</a></li>
-        <li><a href="#">返品・交換</a></li><li><a href="#">ポイント・会員ステージ</a></li>
-        <li><a href="#">よくあるご質問</a></li></ul></div>
+        <li><a href="../kodomo-site/tokushoho.html">配送・送料について</a></li>
+        <li><a href="../kodomo-site/tokushoho.html">返品・交換</a></li>
+        <li><a href="guide.html#faq">よくあるご質問</a></li></ul></div>
       <div><h5>ギフトについて</h5><ul>
-        <li><a href="#">ラッピング</a></li><li><a href="#">のし・メッセージカード</a></li>
-        <li><a href="#">ギフトカード</a></li><li><a href="#">出産祝いガイド</a></li></ul></div>
+        <li><a href="gift.html#gift">ラッピング</a></li><li><a href="gift.html#gift">のし・メッセージカード</a></li></ul></div>
       <div><h5>会社について</h5><ul>
         <li><a href="../kodomo-site/index.html">企業サイト</a></li>
         <li><a href="../kodomo-site/safety.html">安全へのこだわり</a></li>
         <li><a href="../kodomo-site/asobi.html">あそび環境づくり</a></li>
         <li><a href="https://www.instagram.com/plaroots.uwa/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px;margin-right:5px"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a></li></ul></div>
       <div><h5>ご案内</h5><ul>
-        <li><a href="#">ご利用規約</a></li><li><a href="../kodomo-site/privacy.html">プライバシーポリシー</a></li>
-        <li><a href="../kodomo-site/tokushoho.html">特定商取引法に基づく表示</a></li><li><a href="#">運営会社</a></li></ul></div>
-      <div><h5>フォローする</h5><ul>
-        <li><a href="#">Instagram</a></li><li><a href="#">LINE</a></li>
-        <li><a href="#">YouTube</a></li><li><a href="#">メールマガジン登録</a></li></ul></div>
+        <li><a href="../kodomo-site/privacy.html">プライバシーポリシー</a></li>
+        <li><a href="../kodomo-site/tokushoho.html">特定商取引法に基づく表示</a></li><li><a href="../kodomo-site/company.html">運営会社</a></li></ul></div>
     </div>
     <div class="copy">© 2026 plaroots</div>
   </div>
 </footer>
 
 <script>
-/* ============================================================
-   ★ microCMS 接続設定 ★
-   ここ2行を、あなたのmicroCMSの値に書き換えるだけで、
-   商品がmicroCMSの管理画面から読み込まれるようになります。
-   （書き換える前は、下のサンプル商品が表示されます）
-   ------------------------------------------------------------
-   serviceDomain … microCMSの「サービスID」。
-                   管理画面URL https://XXXX.microcms.io の XXXX 部分。
-   apiKey        … 「APIキー」。microCMSの [権限管理 > APIキー] で取得。
-   endpoint      … 作成したAPIのエンドポイント名（例: products）。
-   ============================================================ */
-var MICROCMS = {
-  serviceDomain: "ここにサービスID",   // 例: kodomo-toys
-  apiKey:        "ここにAPIキー",
-  endpoint:      "products"
-};
-
-/* --- microCMS未設定のときに表示されるサンプル商品 --- */
-var SAMPLE = [
-  {name:"にぎにぎラトル",        price:1800, age:"0ヶ月〜",  rank:1},
-  {name:"やわらか布のえほん",    price:2400, age:"3ヶ月〜",  rank:2},
-  {name:"ふりふりマラカス",      price:1500, age:"6ヶ月〜",  rank:3},
-  {name:"木のおきあがりこぼし",  price:3200, age:"10ヶ月〜", rank:4},
-  {name:"はじめてのつみき",      price:4800, age:"1歳〜",    rank:5},
-  {name:"型はめボックス",        price:3600, age:"1歳半〜",  rank:6},
-  {name:"スロープあそび",        price:6500, age:"2歳〜",    rank:7},
-  {name:"木のおままごとセット",  price:8900, age:"3歳〜",    rank:8},
-  {name:"マグネットブロック",    price:7200, age:"4歳〜",    rank:9},
-  {name:"ひらがなカード",        price:1200, age:"4歳〜",    rank:10},
-  {name:"木のドールハウス",      price:14000,age:"5歳〜",    rank:11},
-  {name:"工作クラフトBOX",       price:2900, age:"6歳〜",    rank:12}
-];
-
-/* --- 表示ラベル → 絞り込みキー の対応表 --- */
-var AGE_KEY = {"0ヶ月〜":"m0","3ヶ月〜":"m3","6ヶ月〜":"m6","10ヶ月〜":"m10",
-  "1歳〜":"y1","1歳半〜":"y1h","2歳〜":"y2","3歳〜":"y3","4歳〜":"y4","5歳〜":"y5","6歳〜":"y6"};
-function priceKey(p){ if(p<1000)return"p1"; if(p<2000)return"p2"; if(p<3000)return"p3";
-  if(p<5000)return"p4"; if(p<10000)return"p5"; return"p6"; }
-function esc(s){ return String(s).replace(/[&<>"]/g,function(c){
-  return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
-function yen(n){ return "¥"+Number(n).toLocaleString("ja-JP"); }
-
-/* --- microCMSのセレクト欄は配列で返ることがあるため吸収 --- */
-function one(v){ return Array.isArray(v) ? v[0] : v; }
-
-var state={age:"all",price:"all"};
-var grid=document.getElementById("goodsGrid");
-var emptyEl=document.getElementById("empty");
-var countEl=document.getElementById("count");
-var sourceEl=document.getElementById("source");
-
-function cardHTML(it,i){
-  var age=it.age||"";
-  var img=it.image
-    ? '<img src="'+esc(it.image)+'" alt="'+esc(it.name)+'">'
-    : '<div class="ph"><code>item-'+(i+1)+'.jpg</code></div>';
-  return '<a class="item" href="product.html?name='+encodeURIComponent(it.name)+'" data-age="'+(AGE_KEY[age]||"")+'" data-price="'+priceKey(it.price)+'">'
-    + '<div class="slot"><div class="rank">'+(it.rank||i+1)+'</div>'+img+'</div>'
-    + '<div class="info"><h3>'+esc(it.name)+'</h3><div class="meta">'
-    + '<span class="price">'+yen(it.price)+'<small>（税込）</small></span>'
-    + '<span class="agetag">'+esc(age)+'</span></div></div></a>';
-}
-
-function render(list){
-  // 既存カードを消して、末尾のemptyメッセージは残す
-  grid.querySelectorAll(".item").forEach(function(n){ n.remove(); });
-  var html=list.map(cardHTML).join("");
-  emptyEl.insertAdjacentHTML("beforebegin", html);
-  applyFilter();
-}
-
-function applyFilter(){
-  var items=Array.prototype.slice.call(grid.querySelectorAll(".item"));
-  var shown=0;
-  items.forEach(function(el){
-    var okA=(state.age==="all")||(el.dataset.age===state.age);
-    var okP=(state.price==="all")||(el.dataset.price===state.price);
-    var show=okA&&okP; el.hidden=!show; if(show)shown++;
-  });
-  countEl.textContent=shown+"件を表示中";
-  emptyEl.hidden=shown!==0;
-}
-
-function bind(id,key){
-  var box=document.getElementById(id);
-  box.addEventListener("click",function(e){
-    var b=e.target.closest(".chip"); if(!b)return;
-    box.querySelectorAll(".chip").forEach(function(c){c.setAttribute("aria-pressed","false");});
-    b.setAttribute("aria-pressed","true"); state[key]=b.dataset[key]; applyFilter();
-  });
-}
-bind("ageChips","age"); bind("priceChips","price");
-
-/* --- 商品の読み込み：microCMSが設定済みなら取得、未設定ならサンプル --- */
-function loadProducts(){
-  var configured = MICROCMS.serviceDomain.indexOf("ここに")===-1
-                && MICROCMS.apiKey.indexOf("ここに")===-1;
-  if(!configured){
-    sourceEl.innerHTML='現在は<b>サンプル表示</b>です（microCMS未接続）。スクリプト内の設定を入力すると、管理画面の商品に切り替わります。';
-    render(SAMPLE);
-    return;
-  }
-  var url="https://"+MICROCMS.serviceDomain+".microcms.io/api/v1/"+MICROCMS.endpoint+"?limit=100";
-  fetch(url,{headers:{"X-MICROCMS-API-KEY":MICROCMS.apiKey}})
-    .then(function(r){ if(!r.ok)throw new Error("HTTP "+r.status); return r.json(); })
-    .then(function(data){
-      var list=(data.contents||[]).map(function(c){
-        return {
-          name: c.name,
-          price: Number(c.price),
-          age: one(c.age),                     // セレクト欄
-          rank: c.rank ? Number(c.rank) : null,
-          image: c.image && c.image.url ? c.image.url : ""
-        };
-      });
-      if(!list.length){ sourceEl.innerHTML='microCMSに商品がまだありません。管理画面から商品を追加してください。'; render([]); return; }
-      sourceEl.innerHTML='<b>microCMSと接続中</b>：管理画面の商品を表示しています。';
-      render(list);
-    })
-    .catch(function(err){
-      sourceEl.innerHTML='microCMSへの接続に失敗しました（'+esc(err.message)+'）。設定を確認してください。いまはサンプルを表示します。';
-      render(SAMPLE);
-    });
-}
-loadProducts();
-
 var io=new IntersectionObserver(function(es){
   es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} });
 },{threshold:.12});
 document.querySelectorAll(".reveal:not(.in)").forEach(function(el){ io.observe(el); });
 </script>
+<script src="../common/menu.js" defer></script>
 </body>
 </html>
