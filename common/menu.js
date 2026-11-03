@@ -1,4 +1,4 @@
-/* Plaroots 共通メニュー（スマホ用）
+/* plaroots 共通メニュー（スマホ用）
    上部メニューが隠れる画面幅で「メニュー」ボタンを表示し、主要ページへのリンクを開閉します。
    メニュー項目を変えるときは、下の MENUS を書き換えてください（全ページに反映されます）。 */
 (function () {
@@ -7,7 +7,7 @@
     site: {
       links: [
         ["HOME", "index.html"],
-        ["Plarootsとは", "index.html#about"],
+        ["plarootsとは", "index.html#about"],
         ["4つの活動", "index.html#services"],
         ["商品", "index.html#products"],
         ["実績・活動", "index.html#works"],
