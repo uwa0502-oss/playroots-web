@@ -25,7 +25,7 @@
     --paper:#FBF9F5; --card:#FFFFFF;
     --sage:#7D9471; --sage-deep:#5C7253; --sage-pale:#EDF1E9;
     --butter:#F3CE8B; --blush:#E9C3B8;
-    --ink:#3B382F; --sub:#8B8477; --line:#EAE4D7;
+    --ink:#3B382F; --sub:#6E685C; --line:#EAE4D7;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -72,7 +72,7 @@
   .hero-visual video,.hero-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:1}
   .hero-visual .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
     color:var(--sage-deep);font-size:13px;text-align:center;padding:20px}
-  .deco{position:absolute;pointer-events:none}
+  .deco{position:absolute;pointer-events:none;z-index:3}
   .deco.d1{width:70px;top:-18px;left:-22px;transform:rotate(-8deg)}
   .deco.d2{width:48px;bottom:26px;right:-20px;transform:rotate(10deg)}
   @media(max-width:600px){.deco.d2{right:-4px}.deco.d1{left:-6px}}
@@ -260,7 +260,7 @@
   .flow.drawn .steps::before{transform:scaleX(1)}
 
   /* pull quote：ゆっくり明るくなる */
-  .pull .q{opacity:.35;transition:opacity 1s ease}
+  .pull .q{opacity:.6;transition:opacity 1s ease}
   .pull.lit .q{opacity:1}
 
   @media(prefers-reduced-motion:reduce){
